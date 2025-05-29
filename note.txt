@@ -1,4 +1,12 @@
 ==========Git and GitHub==========
 
-Repository is where you save your code. Save code locally on Git and save your repository on remotely on GitHub
-The terminal is where the commands are written to access and manipulate files and codes
+=====Repository is where you save your code. Save code locally on Git and save your repository on remotely on GitHub=====
+=====The terminal is where the commands are written to access and manipulate files and codes=====
+
+git status - at anytime
+git init - initialize an empty git repo (to be done only in a new project)
+git add .
+git commit -m "first commit"
+
+=====ctrl + j to open terminal in VS Code=====
+
