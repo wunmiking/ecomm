@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --orange: hsl(26, 100%, 55%);
+--pale-orange: hsl(25, 100%, 94%);
+--very-dark-blue: hsl(220, 13%, 13%);
+--dark-grayish-blue: hsl(219, 9%, 45%);
+--grayish-blue: hsl(220, 14%, 75%);
+--light-grayish-blue: hsl(223, 64%, 98%);
+--white: hsl(0, 0%, 100%);
+--black: hsl(0, 0%, 0%);
+
+}
+
+body{
+    font-family: "Kumbh Sans", sans-serif;
+    /* border: 3px solid greenyellow; */
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 12px;
+    }
+
+p{
+    font-size: 16px;
+}
+
+ul{
+    list-style: none;
+    display: none;
+}
+
+/* styling the nav bar */
+
+nav{
+    /* display: flex will make it come sideways */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-section-1a{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.nav-section-2{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    justify-content: end;
+
+}
+
+/* these two commands below are to reduce the size and adjust the position of the cart and avatar icons */
+.nav-section-2 div:last-child{
+    max-width: 20%;
+}
+
+.nav-section-2 div:last-child img{
+    max-width: 100%;
+}
+
+/* main */
+/* we use the command below to fit the large picture into the screen*/
+.hero-img img{
+    max-width: 100%;
+}
+
+/* moving the left and right arrows inside the sneakers picture. */
+.sneakers-div{
+    position: relative;
+}
+
+#arrows-wrapper{
+    position: absolute;
+    bottom: 155px;
+    align-items: center;
+    /* to put the buttons side by side */
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+}
+
+/* fixing the arrows inside the border and giving the border the round look */
+.arrow-divs{
+    background-color: var(--white);
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 19px;
+}
+
+#thumbnail-wrapper{
+    display: none;
+}
+
+/* section-2 styling */
+#section-2-div-1 h4{
+    color: var(--dark-grayish-blue);
+    font-weight: 700;
+    font-size: 19px;
+}
+
+#section-2-div-1 h1{
+    padding: 10px 0;
+    font-size: 2rem;
+}
+
+#section-2-div-2{
+    margin-bottom: 3rem;
+}
+
+/* using the ">" means you're calling the direct child while using just the space means you're calling the descendant */
+#section-2-div-2 > p{
+color: var(--dark-grayish-blue);
+line-height: 1.6;
+/* padding-bottom: 0.5rem; */
+}
+
+#section-2-div-2a {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+}
+
+#section-2-div-2a > h5{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+#section-2-div-2a-par{
+     text-decoration: line-through;
+    color: var(--dark-grayish-blue);
+    font-weight: 700;
+}
+
+#section-2-div-2-parent{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1.5rem 1.2rem 1rem 0.2rem;
+margin-bottom: 1rem;
+}
+
+#section-2-div-2b {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--light-grayish-blue);
+    padding: 15px 1.5rem;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+}  
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 1rem;
+    width: 100%;
+    background-color: var(--orange);
+    padding: 18px 1.5rem;
+    border-radius: 7px;
+    border: none;
+    color: var(--black);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+button img{
+    margin-right: 16px;
+    /* filter: invert(0%) sepia(0%) hue-rotate(deg) brightness() ; */
+}
+
+@media(min-width: 1024px){
+
+    .container{
+    border: 2px solid red;
+    padding: 20px 150px;
+    }
+
+    #nav{
+        border-bottom: 1px solid var(--grayish-blue);
+        margin-bottom: 34px;
+    }
+
+    ul{
+        display: flex;
+        gap: 20px;
+        color: var(--dark-grayish-blue);
+    }
+
+    .nav-section-1{
+        display: flex;
+        gap: 60px;
+        align-items: center;
+    }
+
+    #nav-menu-wrapper{
+        display: none;
+
+    }
+
+    #arrows-wrapper{
+        display: none;
+    }
+
+    #main{
+        /* max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px 200px;
+        justify-content: center;
+        display: grid;
+        
+        the single line below is to adjust the picture frame
+        
+        grid-template-columns: 1.3fr 1fr;
+        align-items: center; */
+
+    }
+
+    #thumbnail-wrapper{
+        display: flex;
+    }
+
+    .main-section-1{
+        border: 3px solid blue;
+    }
+}
+
+
+

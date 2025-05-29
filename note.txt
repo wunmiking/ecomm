@@ -1,0 +1,4 @@
+==========Git and GitHub==========
+
+Repository is where you save your code. Save code locally on Git and save your repository on remotely on GitHub
+The terminal is where the commands are written to access and manipulate files and codes
