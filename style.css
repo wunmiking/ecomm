@@ -255,12 +255,13 @@ button img {
     display: flex;
     gap: 25px;
     padding: 30px 0;
+
        
   }
 
   #thumbnail-wrapper img{
-    width: 90px;
-    justify-content: space-between;
+    width: 5.33rem;
+    /* justify-content: space-between; */
       
   }
 
@@ -301,7 +302,7 @@ button img {
 }
 
 #section-2-div-1 h1{
-  font-size: 40px;
+  font-size: 35px;
   padding-bottom: 30px;
 }
 
