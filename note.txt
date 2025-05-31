@@ -10,3 +10,4 @@ git commit -m "first commit"
 
 =====ctrl + j to open terminal in VS Code=====
 
+=====git branch -M main=====
