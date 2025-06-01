@@ -286,18 +286,20 @@ button img {
   }
 
   #section-2-div-1 h1{
-  font-size: 2.8rem;
+  font-size: 2rem;
+    padding-right: 190px;
   /* padding-bottom: 30px; */
 }
 
 #section-2-div-1 h4{
-  font-size: 15px;
+  font-size: 12px;
 }
 
 #section-2-div-2 > p {
   line-height: 1.6;
-  padding-right: 40px;
+  /* padding-right: 40px; */
   font-size: 17.5px;
+  border: 3px solid;
 }
 
 #section-2-div-2-parent {
